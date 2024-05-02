@@ -1,6 +1,6 @@
 <?php 
 $page_title = "Register Page";
-$page_loc = "Register"
+$activated_btn = "Register"
 ?>
 <?php include('includes/header.php'); ?>
 <?php include('includes/navbar.php');?>

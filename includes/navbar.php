@@ -12,11 +12,12 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link <?php if($page_loc == "Home") echo "active" ?>" aria-current="page"
-                                    href="index.php">Home</a>
-                                <a class="nav-link <?php if($page_loc == "Register") echo "active" ?>"
+                                <a class="nav-link <?php if($activated_btn == "Home") echo "active" ?>"
+                                    aria-current="page" href="index.php">Home</a>
+                                <a class="nav-link <?php if($activated_btn == "Register") echo "active" ?>"
                                     href="register.php">Register</a>
-                                <a class="nav-link <?php if($page_loc == "Log In") echo "active" ?>" href="#">Log
+                                <a class="nav-link <?php if($activated_btn == "Log In") echo "active" ?>"
+                                    href="logIn.php">Log
                                     In</a>
                             </div>
                         </div>
