@@ -14,6 +14,8 @@
                             <div class="navbar-nav">
                                 <a class="nav-link <?php if($activated_btn == "Home") echo "active" ?>"
                                     aria-current="page" href="index.php">Home</a>
+                                <a class="nav-link <?php if($activated_btn == "Dashboard") echo "active" ?>"
+                                    aria-current="page" href="dashboard.php">Dashboard</a>
                                 <a class="nav-link <?php if($activated_btn == "Register") echo "active" ?>"
                                     href="register.php">Register</a>
                                 <a class="nav-link <?php if($activated_btn == "Log In") echo "active" ?>"
