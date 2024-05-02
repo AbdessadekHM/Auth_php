@@ -14,13 +14,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.php">Home</a>
+                                    <a class="nav-link <?php if($page_loc=="Home") echo "active" ?>"
+                                        href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="register.php">Register</a>
+                                    <a class="nav-link <?php if($page_loc=="Register") echo "active" ?>"
+                                        href="register.php">Register</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.php">Log In</a>
+                                    <a class="nav-link <?php if($page_loc=="Log In") echo "active" ?>"
+                                        href="login.php">Log In</a>
                                 </li>
                         </div>
                     </div>

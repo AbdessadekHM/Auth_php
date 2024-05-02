@@ -1,3 +1,7 @@
+<?php 
+$page_title = "Login and Registration System in PHP with Email Verfication";
+$page_loc = "Home"
+?>
 <?php include('includes/header.php'); ?>
 <?php include('includes/navbar.php');?>
 <div class="py-5">
