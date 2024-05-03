@@ -37,14 +37,12 @@ class DB{
     }
     function Update($table,$data,$condition){
         $query = "UPDATE $table SET name=:name,phone=:phone,email=:email,password=:password WHERE $condition";
-        echo $query;
         $statement = $this->conn->prepare($query);
         $statement->execute($data);
         
     }
     function Delete($table,$condition){
         $query = "DELETE FROM $table WHERE $condition";
-        echo $query;
         $statement = $this->conn->prepare($query);
         $statement->execute();
         

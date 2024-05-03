@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $page_title = "Register Page";
 $activated_btn = "Register"
 ?>
@@ -7,6 +8,13 @@ $activated_btn = "Register"
 
 <div class="py-5">
     <div class="container">
+
+        <?php if(isset($_SESSION['message'])) : ?>
+        <h5 class='alert alert-danger'>
+            <?= $_SESSION['message']; ?>
+        </h5>
+        <?php endif ?>
+        <?php unset($_SESSION['message']) ?>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow">
@@ -14,7 +22,7 @@ $activated_btn = "Register"
                         <h5>Registration Form</h5>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="code.php" method="post">
                             <div class="form-group mb-3">
                                 <label for="">Name</label>
                                 <input type="text" name="name" id="" class="form-control">
@@ -36,7 +44,7 @@ $activated_btn = "Register"
                                 <input type="password" name="confirm_password" id="" class="form-control">
                             </div>
                             <div class="form-group mb-3">
-                                <button class="btn btn-primary" type="submit">
+                                <button class="btn btn-primary" name="register" type="submit">
                                     Register
                                 </button>
                             </div>

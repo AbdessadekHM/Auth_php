@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $page_title = "Log In Page";
 $activated_btn = "Log In"
 ?>
@@ -7,6 +8,12 @@ $activated_btn = "Log In"
 
 <div class="py-5">
     <div class="container">
+        <?php if(isset($_SESSION['message'])) : ?>
+        <h5 class='alert alert-success'>
+            <?= $_SESSION['message']; ?>
+        </h5>
+        <?php endif ?>
+        <?php unset($_SESSION['message']) ?>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow">
