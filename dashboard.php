@@ -1,5 +1,5 @@
-<?php 
-$page_title = "Login and Registration System in PHP with Email Verfication";
+<?php
+$page_title = "Dashoboard";
 $activated_btn = "Dashboard"
 ?>
 <?php include('includes/header.php'); ?>
